@@ -1,0 +1,21 @@
+
+- GGH Public Key Cryptosystem
+
+	==== Key Creation ====
+1. Choose a good basis v_1,..., v_n
+2. Choose an integer matrix U satisfying det(U) = ±1
+3. Compute a bad basis w_1,..., w_n as the rows of W = UV
+4. Publish the public key w_1,..., w_n
+
+
+	==== Encryption ====
+1. Choose small plaintext vector m.
+2. Choose random small vector r
+3. Use Alice’s public key to compute e = x_1v_1 + ··· + x_nv_n + r
+4. Send the ciphtertext e to Alice
+
+
+	==== Decryption ====
+1. Use Babai’s algorithm to compute the vector v ∈ L closest to e
+2. Compute vW−1 to recover m
+
