@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{parskip}
+
+\begin{document}
+- GGH Public Key Cryptosystem\newline
+	
+==== Key Creation ====\newline\newline
+1. Choose a good basis v1,..., vn.\par
+2. Choose an integer matrix U satisfying det(U) = ±1.\par
+3. Compute a bad basis w1,..., wn as the rows of W = UV.\par 
+4. Publish the public key w1,..., wn.\par
+
+\par
+	==== Encryption ====\par 
+1. Choose small plaintext vector m.\par
+2. Choose random small vector r.\par 
+3. Use Alice’s public key to compute $e = x_1v_1 + \text{···} + x_nv_n + r.$\par
+4. Send the ciphtertext e to Alice.\par 
+\par
+
+	==== Decryption ====\par
+1. Use Babai’s algorithm to compute the vector $v \in L$ closest to e.\par 
+2. Compute $vW^{-1}$ to recover m.\par 
+
+\end{document}
+
