@@ -1,4 +1,4 @@
 #!/bin/bash
 
 pdflatex plan.tex
-less plan.pdf
+firefox plan.pdf
