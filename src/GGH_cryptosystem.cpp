@@ -40,7 +40,6 @@ static Vec<ZZ> BabaiRows(const Mat<ZZ>& Bz, const Vec<ZZ>& e){
 	return v;
 }
 
-
 Vec<ZZ> EncryptGGH(Mat<ZZ> Public_key, Vec<ZZ> plain_text, unsigned int delta){
 	Vec<ZZ> cipher_text;
 	Vec<ZZ> ephemeral_key;

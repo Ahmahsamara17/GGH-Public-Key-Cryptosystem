@@ -290,7 +290,6 @@ Mat<ZZ> GetPublicKey(Mat<ZZ>& Priv_key){
 	return Public_key;
 }
 
-
 Vec<ZZ> EncryptGGH(Mat<ZZ> Public_key, Vec<ZZ> plain_text, unsigned int delta){
 	Vec<ZZ> cipher_text;
 	Vec<ZZ> ephemeral_key;
@@ -305,9 +304,6 @@ Vec<ZZ> EncryptGGH(Mat<ZZ> Public_key, Vec<ZZ> plain_text, unsigned int delta){
 	return cipher_text;
 	
 }
-
-
-
 
 Vec<ZZ> DecryptGGH(Mat<ZZ> Priv_key, Mat<ZZ> Public_key, Vec<ZZ> cipher_text){
 	Vec<ZZ> v=BabaiRows(Priv_key,cipher_text);

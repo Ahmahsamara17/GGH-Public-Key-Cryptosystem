@@ -3,22 +3,6 @@
 random_device rand_dev;
 mt19937       generator(rand_dev());
 
-// Private Key Gen:
-// I want to create a function that given a dimension gives me a unit vector with that many dimensions
-// I need a function that will generate n random values from a range [-d, d]  
-// I need a function that will generate an n dimensional vector with random values from a range
-// I need a funciton that will generate k amount of n dimesnsional vectors with random values from a range
-// I need a function that will compute the Hadamard ratio of a list of vectors.
-// I need a function that will return a basis with a Hadamard ratio above a certain value
-
-// Public Key Gen:
-//
-
-/*
- * Function that returns an n dimensional vector with coordinates initialized to 1 
-*/
-
-
 Mat<ZZ> GetIdentityMatrix(unsigned int n){
 	
 	Mat<ZZ> I_M;
@@ -189,7 +173,6 @@ Mat<ZZ> GetPublicKey(Mat<ZZ>& Priv_key){
 
 	return Public_key;
 }
-
 
 int main(){
 	return 0;
